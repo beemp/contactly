@@ -1,0 +1,12 @@
+div(id='bucket')
+script.
+  var bucket = document.getElementById('bucket')
+  var temp = '';
+  for (var i=0; i != 5; ++i) {
+    var div = document.createElement("people"+i)
+    div.innerHTML += 'person'+i
+    div.innerHTML += ' 041112434'+i
+    div.innerHTML += ''+i+' Fake St, Leltown, 2016\n'
+    div.innerHTML += '<br/>'
+    bucket.appendChild(div)
+  }
